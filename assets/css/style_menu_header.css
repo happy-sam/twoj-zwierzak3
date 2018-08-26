@@ -1,0 +1,375 @@
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+/* Wyszukiwarka */
+
+#searchField{
+    width: calc(-31.3px + 82.2vw);
+    margin: calc(55px + 2vw) auto 0;
+}
+input[id=searchInput]:focus{
+    box-shadow: none;
+}
+#searchButton:focus{
+    box-shadow: none;
+}
+input[id=searchInput]{
+    height: calc(22.4px + 6.85vw);
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.input-group-append {
+    display: table
+}
+#searchButton{
+    width: calc(22.4px + 6.85vw);
+    height: calc(22.4px + 6.85vw);
+    border: none;
+    border-radius:  0 5px 5px 0;
+    background-color: #219cd2;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center
+}
+#searchButton:hover {
+    cursor: pointer;
+}
+#searchButton .fa-search{
+    font-size: calc(12.4px + 2.3vw);
+    position: relative;
+    top: 2px;
+    left: 1px
+}
+
+@media only screen and (min-width: 768px) {
+    #searchField{
+        width: 600px
+    }
+    input[id=searchInput]{
+        height: 75px
+    }
+    #searchButton {
+        width: 75px;
+        height: 75px;
+    }
+    #searchButton .fa-search {
+        font-size: 30px
+    }
+}
+
+/* nav i header */
+
+.logo_container a, .logo_text, #menu a, .add_company_text {
+    transition: color 0.2s
+}
+nav, header {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+nav a:hover {
+    text-decoration: none;
+    color: #f78164;
+}
+.slicknav_menu a:hover {
+    text-decoration: none;
+}
+header {
+    height: calc(386.4px + 44.85vw);
+    padding-top: 1px;
+    background-image: url('../images/dummy-683x1024-Cat.jpg');
+    background-size: 100%;
+    background-position-y: calc(-3px - 2vw);
+}
+#menu {
+    display: none;
+}
+.left_flex {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: calc(13px + 1vw);
+}
+.left_flex:hover {
+    color: #f78164;
+    font-size: calc(14px + 1vw);
+}
+.logo_circle {
+    width: calc(27px + 1.5vw);
+    height: calc(27px + 1.5vw);
+    background-color: #ecad3d;
+    color: #ecad3d;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    top: 15px;
+    left: calc(7px + 1vw);
+    text-align: center
+}
+.logo_text {
+    font-family: 'Poppins', sans-serif;
+    font-size: inherit;
+    display: inline-block;
+    position: relative;
+    top: calc(5px - 0.33vw);
+    left: calc(8px + 1.8vw);
+    transition: font-size 0.2s;
+    margin: 0;
+}
+.account_img {
+    width: calc(30px + 1vw);
+    position: relative;
+    top: -2px;
+}
+.add_company {
+    padding: 0 calc(7px + 1vw);
+    height: calc(27px + 1.5vw);
+    position: absolute;
+    top: 15px;
+    right: calc(48.5px + 3.5vw);
+    font-size: calc(10px + 1vw);
+    font-weight: 700;
+    background-color: #f78164;
+    border-radius: 3px;
+    display: table;
+    box-sizing: border-box;
+}
+.add_company:hover {
+    background-color: #fff;
+    transition: background-color 0.2s;
+}
+.add_company_text {
+    display: table-cell;
+    vertical-align: middle;
+    color: inherit
+}
+.add_company span {
+    display: none;
+}
+.head_container {
+    margin-top: calc(45px + 8vw);
+}
+.head_container p {
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+.head_title {
+    font-size: calc(24px + 3vw);
+    font-weight: 700;
+}
+.head_container p.head_descr {
+    margin-top: calc(35px + 2vw);
+    font-size: calc(17px + 1vw);
+    font-weight: 400;
+}
+
+@media only screen and (min-width: 380px) {
+    .add_company span {
+        display: inline;
+    }
+}
+
+@media only screen and (min-width: 997px) {
+    #menu {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .right_flex, .left_flex {
+        display: flex;
+        position: static;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+
+    }
+    .left_flex {
+        font-size: 20px;
+    }
+    .left_flex:hover {
+        font-size: 21px;
+    }
+    .main_flex {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: calc(-23.4px + 4.05vw);
+        left: 0;
+        width: calc(110px + 84.2vw) ;
+        margin-left: calc(-63.8px + 7.9vw);
+        justify-content: space-between;
+
+    }
+    .logo_text, .account_text {
+        padding: 0;
+        margin: 0;
+    }
+    .logo_circle {
+        width: 40px;
+        height: 40px;
+        position: static;
+    }
+    .logo_text {
+        font-size: inherit;
+        left: 0;
+        top: 1px;
+        margin-left: calc(-9.9px + 1.8vw);
+        padding-bottom: 4px;
+    }
+    #menu li {
+        text-align: center;
+        font-size: 18px;
+        position: relative
+    }
+    .margin_right_li {
+        margin-right: calc(-49.3px + 6.55vw);
+    }
+    .contact_li {
+        padding-right: calc(-21.9px + 3.6vw);
+        position: relative;
+    }
+    .contact_li::after {
+        display: inline-block;
+        content: '';
+        height: 34px;
+        border-right: 1px solid #d8d8d8;
+        position: absolute;
+        top: -3px;
+        right: -1px;
+    }
+    .account_li {
+        height: 28px;
+        margin: 0 calc(-21.9px + 3.6vw);
+        padding-left: calc(11.06px + 2vw);
+        text-align: center;
+        background-image: url('../images/user-icons-for-IOS.png');
+        background-size: 29px;
+        background-repeat: no-repeat;
+        background-position: -1px 0;
+        background-clip: border-box;
+    }
+    .account_img {
+        display: inline-block;
+        width: 30px;
+        margin-right: calc(-19.94px + 2vw);
+        float: left;
+    }
+    .add_company {
+        position: static;
+        display: flex;
+        font-size: 16px;
+        height: calc(30px + 1vw);
+        padding: calc(3px + 0.5vw) calc(15px + 0.5vw);
+    }
+    header {
+        padding-top: 1px;
+        height: calc(539.8px + 9.05vw);
+        background-image: url('../images/dummy-2160x2880-Cat.jpg');
+        background-size: 100%;
+    }
+    .head_container {
+        margin-top: calc(149.7px + 7.75vw);
+        line-height: 1;
+    }
+    .line_break {
+        display: none;
+    }
+    .head_title {
+        font-size: 44px;
+    }
+    .head_container p.head_descr {
+        font-size: 22px;
+        margin-top: 30px;
+        margin-bottom: 60px;
+    }
+    .subpage_news nav {
+        padding: calc(-23.4px + 4.05vw) 0;
+        border-bottom: 1px solid #d8d8d8;
+    }
+    .subpage_news .main_flex {
+        position: static;
+    }
+    .subpage_news nav .logo_container a, .subpage_news nav #menu a {
+        color: #0e2d6e
+    }
+    .subpage_news nav #menu li:nth-of-type(2) a {
+        color: #f78164;
+    }
+    .subpage_news nav #menu li:nth-of-type(2)::before {
+        display: block;
+        width: 110%;
+        height: 3px;
+        content: '';
+        background-color: #f78164;
+        border-radius: 2px;
+        position: absolute;
+        top: calc(5.6px + 4.55vw);
+        left: -5%;
+    }
+    .subpage_news nav #menu a:hover {
+        color: #f78164;
+        transition-property: none;
+        transition: color 0.2s
+    }
+    .subpage_news .add_company:hover {
+        box-shadow: 0 0 4px 4px #ccc;
+    }
+    .subpage_news .add_company:hover .add_company_text {
+        transition-property: none
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    body {
+        width: 1440px;
+        margin: 0 auto
+    }
+    header {
+        height: 670px;
+        background-position-y: -32px;
+    }
+    .main_flex {
+        top: 35px;
+        width: 1322px;
+        margin-left: 50px;
+    }
+    .logo_text {
+        margin-left: 16px;
+    }
+    .add_company {
+        height: 45px;
+        padding: 10px 22px;
+    }
+    .margin_right_li {
+        margin-right: 45px;
+    }
+    .contact_li {
+        padding-right: 30px;
+    }
+    .account_li {
+        margin: 0 30px;
+        padding-left: 39px;
+    }
+    .account_img {
+        margin-right: 9px;
+    }
+    .head_container {
+        margin-top: 261px;
+    }
+    .subpage_news nav {
+        padding: 35px 0;
+    }
+    .subpage_news nav #menu li:nth-of-type(2)::before {
+        top: 71px
+    }
+}
